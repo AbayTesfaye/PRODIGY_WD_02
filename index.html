@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle">
+        <div id="timer">00:00:00</div>
+      </div>
+      <div class="buttons">
+        <button class="resetBtn hidden" id="reset">
+          <i class="fa fa-refresh" aria-hidden="true"></i>
+          <div class="button-text">Reset</div>
+        </button>
+        <button class="startStopBtn" id="play">
+          <i class="fa-solid fa-play"></i>
+          <div class="button-text">Play</div>
+        </button>
+        <button class="lapBtn hidden" id="lap">
+          <i class="fa-solid fa-flag"></i>
+          <div class="button-text">Lap</div>
+        </button>
+      </div>
+      <ul class="laps">
+        <button class="lap-clear-btn hidden">Clear All</button>
+      </ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
